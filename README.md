@@ -1,3 +1,5 @@
+_IronicallySerious: I am editing this to make clang-format only check new changes and apply them automatically_
+
 # Clang format Github action
 
 This project can be used to run clang-format on every push using Github actions.
@@ -18,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clang Code Formatter
-      uses: antoinealb/clang-format-action@clang9
+      uses: IronicallySerious/clang-format-action@clang9
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
